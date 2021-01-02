@@ -10,7 +10,7 @@ def available_animals():
     return [a for a, c in animals_count.items() if c < 2]
 
 class Animal:
-    def _init_(self, index):
+    def __init__(self, index):
         self.index = index
         self.row = index // gc.NUM_TILES_SIDE
         self.col = index % gc.NUM_TILES_SIDE
